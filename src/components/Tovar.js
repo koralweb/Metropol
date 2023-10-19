@@ -8,7 +8,7 @@ const Tovar = ({prod, tovarClick}) => {
       <View style={styles.cart}>
         <Image style={styles.image} source={prod.image} />
         <Text style={styles.title}>{prod.title}</Text>
-        <Text style={styles.price}>{prod.price}</Text>
+        <Text style={styles.price}>{prod.price}Kc</Text>
       </View>
     </TouchableOpacity>
   );

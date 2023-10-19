@@ -94,6 +94,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     marginLeft: 20,
     alignSelf: 'center',
+    justifyContent:'center'
   },
 });
 

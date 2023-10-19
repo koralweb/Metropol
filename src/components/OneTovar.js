@@ -37,7 +37,7 @@ const OneTovar = ({prod, close, navigation}) => {
           <Text style={styles.tovarTitle}>{prod.title}</Text>
           <View style={styles.desc}>
             <Text style={styles.tovarDesc}>{prod.desc}</Text>
-            <Text style={styles.tovarPrice}>{prod.price}p</Text>
+            <Text style={styles.tovarPrice}>{prod.price}Kc</Text>
           </View>
 
           <TouchableOpacity style={styles.tovarButten} onPress={addProduct}>

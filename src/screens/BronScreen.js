@@ -11,14 +11,15 @@ import BronCongrats from '../components/BronCongrats';
 
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 
-const BronScreen = ({navigation}) => {
+const BronScreen = ({route, navigation}) => {
   const [bron, setBron] = useState(false);
+  const fromCart = useState(route.params?.cart)[0]
   return (
     <View style={styles.cont}>
       <TouchableOpacity style={styles.icon} onPress={() => navigation.goBack()}>
         <FontAwesomeIcon color={'#B07908'} size={30} icon={'angle-left'} />
       </TouchableOpacity>
-      <Text style={styles.title}>Stůl rezervace</Text>
+      <Text style={styles.title}>{fromCart ? 'Dokončete objednávku' : 'Stůl rezervace'}</Text>
 
       <View style={styles.bronList}>
         <TextInput
@@ -39,9 +40,9 @@ const BronScreen = ({navigation}) => {
           placeholderTextColor={'silver'}></TextInput>
       </View>
       <TouchableOpacity style={styles.bronBtn} onPress={() => setBron(true)}>
-        <Text style={styles.btnText}>další</Text>
+        <Text style={styles.btnText}>{fromCart ? 'Překontrolovat' : 'Další'}</Text>
       </TouchableOpacity>
-      {bron && <BronCongrats navigation={navigation} />}
+      {bron && <BronCongrats navigation={navigation} fromCart={fromCart}/>}
     </View>
   );
 };

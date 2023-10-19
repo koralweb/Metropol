@@ -9,6 +9,7 @@ class Product {
       list: observable,
       addProduct: action,
       removeProduct: action,
+      clearAllProducts: action
     });
   }
   addProduct(id, cnt) {
@@ -18,6 +19,10 @@ class Product {
 
   removeProduct(id) {
     this.list.find(el => el.id === id).added = false;
+  }
+
+  clearAllProducts(){
+    this.list.forEach(el => el.added = false)
   }
 }
 

@@ -47,10 +47,10 @@ const CartScreen = ({navigation}) => {
             <View style={styles.totalPrice}>
               <View style={styles.totalSum}>
                 <Text style={styles.totalSumText}>Celkový</Text>
-                <Text style={styles.totalSumText}>{all()}p</Text>
+                <Text style={styles.totalSumText}>{all()}Kc</Text>
               </View>
               <TouchableOpacity
-                onPress={() => setCongrats(true)}
+                onPress={() => navigation.push('Bron', {cart:true})}
                 style={styles.cartButten}>
                 <Text style={styles.cartBtnText}>Zadejte mou objednávku</Text>
               </TouchableOpacity>

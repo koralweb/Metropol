@@ -10,7 +10,7 @@ const CartTovar = ({prod}) => {
       <Image style={styles.image} source={prod.image} />
       <View>
         <Text style={styles.title}>{prod.title}</Text>
-        <Text style={styles.price}>{prod.price}p</Text>
+        <Text style={styles.price}>{prod.price}Kc</Text>
       </View>
       <View>
         <TouchableOpacity

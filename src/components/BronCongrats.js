@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   StyleSheet,
   Text,
@@ -7,13 +7,19 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
+import products from '../mobx/products';
 
-const BronCongrats = ({navigation}) => {
+const BronCongrats = ({navigation, fromCart}) => {
+
+  useEffect(() => {
+    products.clearAllProducts()
+  }, [])
+
   return (
     <View style={styles.cont}>
       <Image style={styles.image} source={require('../images/congrats.png')} />
       <Text style={styles.titCongrats}>Gratuluji!</Text>
-      <Text style={styles.titleText}>Stůl rezervován</Text>
+      <Text style={styles.titleText}>{fromCart ? 'Objednávka Kompletní' : 'Stůl rezervován'}</Text>
       <TouchableOpacity
         style={styles.butten}
         onPress={() => navigation.push('Home')}>
