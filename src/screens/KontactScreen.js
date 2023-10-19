@@ -18,16 +18,16 @@ const KontactScreen = ({navigation}) => {
       <Text style={styles.title}>Kontakty</Text>
       <View style={styles.contactList}>
         <View style={styles.contactCart}>
-          <Text style={styles.contactText}>Adresa</Text>
+          <Text style={styles.contactText}>Boleslavská, 130 00 Praha 3-Vinohrady, Czech</Text>
         </View>
         <View style={styles.contactCart}>
-          <Text style={styles.contactText}>Telefonní číslo</Text>
+          <Text style={styles.contactText}>+420314000617</Text>
         </View>
         <View style={styles.contactCart}>
-          <Text style={styles.contactText}>Index</Text>
+          <Text style={styles.contactText}>130 00 Praha</Text>
         </View>
         <View style={styles.contactCart}>
-          <Text style={styles.contactText}>Data</Text>
+          <Text style={styles.contactText}>Vstup z parkoviště</Text>
         </View>
       </View>
       <Image style={styles.img} source={require('../images/logo.png')} />

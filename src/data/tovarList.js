@@ -2,7 +2,7 @@ let tovarList = [
   {
     title: 'Julien',
     desc: 'Smetanová omáčka, cibule, kuřecí řízek, žampiony, mozzarella',
-    price: 710,
+    price: 710/2,
     image: require('../images/p1.jpeg'),
     weight: 500,
     class: 'Pizza',
@@ -10,7 +10,7 @@ let tovarList = [
   {
     title: 'Margarita',
     desc: 'Mutti omáčka, mozzarella, rajčata',
-    price: 640,
+    price: 640/2,
     image: require('../images/p2.jpeg'),
     weight: 510,
     class: 'Pizza',
@@ -18,7 +18,7 @@ let tovarList = [
   {
     title: 'Maso',
     desc: 'Růžová omáčka, salám, feferonky, slanina, rajčata, žampiony, mozzarella',
-    price: 850,
+    price: 850/2,
     image: require('../images/p3.jpeg'),
     weight: 550,
     class: 'Pizza',
@@ -26,7 +26,7 @@ let tovarList = [
   {
     title: 'Pepperoni',
     desc: 'Mutti omáčka, mozzarella, feferonky, olivy',
-    price: 640,
+    price: 640/2,
     image: require('../images/p4.jpeg'),
     weight: 530,
     class: 'Pizza',
@@ -34,7 +34,7 @@ let tovarList = [
   {
     title: 'Sicílie',
     desc: 'Mutt omáčka, mozzarella, slanina, ananas, uzené kuře, teriyaki omáčka',
-    price: 610,
+    price: 610/2,
     image: require('../images/p5.jpeg'),
     weight: 500,
     class: 'Pizza',
@@ -42,7 +42,7 @@ let tovarList = [
   {
     title: 'Asijský krab',
     desc: 'Sojová omáčka, zázvor a wasabi nejsou součástí balení. Smetanový sýr, sněžný krab, tomago, sezamová semínka, medová hořčičná omáčka',
-    price: 310,
+    price: 310/2,
     image: require('../images/r1.jpeg'),
     weight: 200,
     class: 'Rolls',
@@ -50,7 +50,7 @@ let tovarList = [
   {
     title: 'Bonito',
     desc: 'Sojová omáčka, zázvor a wasabi nejsou součástí balení. Smetanový sýr, ledovec, losos, tuňákové vločky',
-    price: 300,
+    price: 300/2,
     image: require('../images/r2.jpeg'),
     weight: 200,
     class: 'Rolls',
@@ -58,7 +58,7 @@ let tovarList = [
   {
     title: 'Izumi',
     desc: 'Sojová omáčka, zázvor a wasabi nejsou součástí balení. Smetanový sýr, tygří krevety tempura, ledovec',
-    price: 320,
+    price: 320/2,
     image: require('../images/r3.jpeg'),
     weight: 200,
     class: 'Rolls',
@@ -66,7 +66,7 @@ let tovarList = [
   {
     title: 'Ichigo',
     desc: 'Sojová omáčka, zázvor a wasabi nejsou součástí balení. Smetanový sýr, takuan, losos teriyaki, smažená cibule, medová hořčičná omáčka',
-    price: 330,
+    price: 330/2,
     image: require('../images/r4.jpeg'),
     weight: 200,
     class: 'Rolls',
@@ -74,7 +74,7 @@ let tovarList = [
   {
     title: 'Kalifornie',
     desc: 'Sojová omáčka, zázvor a wasabi nejsou součástí balení. Smetanový sýr, sněžný krab, okurka, masago',
-    price: 300,
+    price: 300/2,
     image: require('../images/r5.jpeg'),
     weight: 200,
     class: 'Rolls',
@@ -82,7 +82,7 @@ let tovarList = [
   {
     title: 'Bramborové klínky',
     desc: 'Brambory, obalování',
-    price: 110,
+    price: 110/2,
     image: require('../images/sn1.jpeg'),
     weight: 130,
     class: 'Snacks',
@@ -90,7 +90,7 @@ let tovarList = [
   {
     title: 'hranolky',
     desc: 'Brambory, obalování',
-    price: 110,
+    price: 110/2,
     image: require('../images/sn2.jpeg'),
     weight: 100,
     class: 'Snacks',
@@ -98,7 +98,7 @@ let tovarList = [
   {
     title: 'Křídlové hranolky',
     desc: 'Křídla smažená ve sladkokyselé omáčce.',
-    price: 250,
+    price: 250/2,
     image: require('../images/sn3.jpeg'),
     weight: 170,
     class: 'Snacks',
@@ -106,7 +106,7 @@ let tovarList = [
   {
     title: 'Cibulové kroužky',
     desc: 'Cibulové kroužky, obalování',
-    price: 180,
+    price: 180/2,
     image: require('../images/sn4.jpeg'),
     weight: 150,
     class: 'Snacks',
@@ -114,7 +114,7 @@ let tovarList = [
   {
     title: 'Nugety',
     desc: 'Kuřecí řízek, obalování',
-    price: 120,
+    price: 120/2,
     image: require('../images/sn5.jpeg'),
     weight: 100,
     class: 'Snacks',
@@ -122,7 +122,7 @@ let tovarList = [
   {
     title: 'Vesuv',
     desc: 'Smetanový sýr, tomago, okurka, zelená cibulka, sezam, gouda, majonéza',
-    price: 210,
+    price: 210/2,
     image: require('../images/rr1.jpeg'),
     weight: 220,
     class: 'Baked rolls',
@@ -130,7 +130,7 @@ let tovarList = [
   {
     title: 'Carbonara',
     desc: 'Smetanový sýr, uzené kuře, zelená cibulka, slanina, gouda, majonéza',
-    price: 360,
+    price: 360/2,
     image: require('../images/rr2.jpeg'),
     weight: 270,
     class: 'Baked rolls',
@@ -138,7 +138,7 @@ let tovarList = [
   {
     title: 'Horká láva',
     desc: 'Smetanový sýr, sněžný krab, lávová omáčka',
-    price: 250,
+    price: 250/2,
     image: require('../images/rr3.jpeg'),
     weight: 210,
     class: 'Baked rolls',
@@ -146,7 +146,7 @@ let tovarList = [
   {
     title: 'Buff na lososa',
     desc: 'Smetanový sýr, losos, kopr, gouda, majonéza',
-    price: 390,
+    price: 390/2,
     image: require('../images/rr4.jpeg'),
     weight: 330,
     class: 'Baked rolls',
@@ -154,7 +154,7 @@ let tovarList = [
   {
     title: 'mikádo',
     desc: 'Smetanový sýr, rajče, zelená cibulka, uzené kuře, lávová omáčka',
-    price: 260,
+    price: 260/2,
     image: require('../images/rr5.jpeg'),
     weight: 220,
     class: 'Baked rolls',
@@ -162,7 +162,7 @@ let tovarList = [
   {
     title: 'Carbonara horká',
     desc: 'Smetanový sýr, slanina, zelená cibule, omáčka unagi, těsto, sezamová semínka',
-    price: 250,
+    price: 250/2,
     image: require('../images/f1.jpeg'),
     weight: 230,
     class: 'Fried rolls',
@@ -170,7 +170,7 @@ let tovarList = [
   {
     title: 'Krabí horké',
     desc: 'Smetanový sýr, sněžný krab, led, medová hořčičná omáčka, těsto',
-    price: 230,
+    price: 230/2,
     image: require('../images/f2.jpeg'),
     weight: 230,
     class: 'Fried rolls',
@@ -178,7 +178,7 @@ let tovarList = [
   {
     title: 'Losos horký',
     desc: 'Smetanový sýr, losos, těsto',
-    price: 280,
+    price: 280/2,
     image: require('../images/f3.jpeg'),
     weight: 230,
     class: 'Fried rolls',
@@ -186,7 +186,7 @@ let tovarList = [
   {
     title: 'Kuře pálivé',
     desc: 'Smetanový sýr, uzené kuře, rajče, těsto',
-    price: 240,
+    price: 240/2,
     image: require('../images/f4.jpeg'),
     weight: 230,
     class: 'Fried rolls',
@@ -194,7 +194,7 @@ let tovarList = [
   {
     title: 'Ebi horké',
     desc: 'Smetanový sýr, tygří krevety, smažená cibule, těsto, medová hořčičná omáčka',
-    price: 250,
+    price: 250/2,
     image: require('../images/f5.jpeg'),
     weight: 230,
     class: 'Fried rolls',
